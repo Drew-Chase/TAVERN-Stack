@@ -5,7 +5,7 @@ import $ from "jquery"
 
 export default function ThemeSwitcher() {
     return (
-        <Switch defaultSelected size="lg" color="success" startContent={<SunIcon/>} endContent={<MoonIcon/>} onValueChange={(value) => {
+        <Switch size="lg" color="success" startContent={<SunIcon/>} endContent={<MoonIcon/>} defaultSelected={getCurrentTheme() === themes.light} onValueChange={(value) => {
             applyTheme(value ? themes.light : themes.dark)
         }}/>
     );
@@ -57,4 +57,14 @@ export function applyTheme(theme: themes = themes.default) {
     const name: string = theme == themes.light ? "light" : theme == themes.dark ? "dark" : (localStorage.getItem("theme") ?? "light");
     localStorage.setItem("theme", name)
     $("html").removeClass("dark").removeClass("light").addClass(name)
+}
+
+export function getCurrentTheme(): themes {
+    switch (localStorage.getItem("theme")) {
+        case "dark":
+            return themes.dark
+        case "light":
+        default:
+            return themes.light;
+    }
 }
