@@ -1,4 +1,4 @@
-# JTRVN-Stack
+# TAVERN-Stack
 TAVERN Stack - Typescript + Vite + React + NextUI
 ## Getting Started
 To get started with TAVERN Stack, you can use the following commands   
