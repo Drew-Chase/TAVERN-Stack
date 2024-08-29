@@ -5,7 +5,7 @@ edition = "2021"
 
 [[bin]]
 name = "{{project_name}}"
-path = "main.rs"
+path = "src-axium/main.rs"
 
 [dependencies]
 actix-web = { version = "4.9.0" }
