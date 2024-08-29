@@ -15,7 +15,7 @@ export function buildFrontend() {
 export function buildBackend() {
     console.log("Building backend...");
     execSync("cargo build --release", {stdio: "inherit"});
-    copyFileSync("target/release/stacked.exe", `${outputDirectory}/stacked.exe`);
+    copyFileSync("target/release/{{project_name}}.exe", `${outputDirectory}/{{project_name}}.exe`);
 }
 
 export function cleanup() {
@@ -49,7 +49,7 @@ export function incrementVersion() {
 export async function deploy() {
     console.log("Deploying...");
     // Specify the output file
-    const output = createWriteStream(`stacked-${version}.zip`);
+    const output = createWriteStream(`{{project_name}}-${version}.zip`);
     const archive = archiver('zip', {
         zlib: {level: 9}  // Set the compression level
     });
