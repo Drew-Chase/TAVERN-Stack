@@ -1,4 +1,4 @@
-import {buildBackend, buildFrontend, cleanup, deploy, incrementVersion} from "./stacked.js";
+import {buildBackend, buildFrontend, cleanup, deploy, incrementVersion} from "./app.js";
 
 publish();
 
