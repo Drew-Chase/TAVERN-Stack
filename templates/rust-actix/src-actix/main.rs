@@ -1,29 +1,31 @@
-use actix_files::Files;
-use actix_files::NamedFile;
-use actix_web::error::ErrorInternalServerError;
-use actix_web::{error, middleware, web, App, HttpResponse, HttpServer, Responder};
+use actix_files::{file_extension_to_mime};
+use actix_web::{error::ErrorInternalServerError, get, middleware, web, App, HttpResponse, HttpServer, Responder};
+use include_dir::{include_dir, Dir};
 use serde_json::json;
+
+// Include the wwwroot directory from the OUT_DIR
+static WWWROOT: Dir = include_dir!("dist/wwwroot");
 
 // Function to serve the index.html file
 async fn index() -> Result<impl Responder, actix_web::Error> {
-	match NamedFile::open_async("wwwroot/index.html").await {
-		Ok(file) => Ok(file),
-		Err(_) => Err(ErrorInternalServerError("Error serving index.html")),
+	if let Some(file) = WWWROOT.get_file("index.html") {
+		let body = file.contents();
+		return Ok(HttpResponse::Ok().content_type("text/html").body(body));
 	}
+	Err(ErrorInternalServerError("Failed to find index.html"))
 }
+
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-	std::env::set_var("RUST_LOG", "actix_web=info");
+	std::env::set_var("RUST_LOG", "trace");
 	env_logger::init();
 
 	let port = 1420; // Port to listen on
-
 
 	println!(
 		"Starting server at http://127.0.0.1:{port}",
 		port = port,
 	);
-
 
 	HttpServer::new(move || {
 		App::new()
@@ -33,7 +35,7 @@ async fn main() -> std::io::Result<()> {
 					.limit(4096)
 					.error_handler(|err, _req| {
 						let error = json!({ "error": format!("{}", err) });
-						error::InternalError::from_response(
+						actix_web::error::InternalError::from_response(
 							err,
 							HttpResponse::BadRequest().json(error),
 						)
@@ -41,15 +43,8 @@ async fn main() -> std::io::Result<()> {
 					}),
 			)
 			// Handle API routes here
-			.service(
-				web::scope("api")
-					.service(status),
-			)
-			// Serve static files from the wwwroot directory
-			.service(
-				Files::new("/", "wwwroot")
-					.index_file("index.html"),
-			)
+			.service(web::scope("api").service(status))
+			.service(web::scope("assets/{file}").service(assets))
 			// Handle all other routes by serving the index.html file
 			.default_service(web::route().to(index))
 	})
@@ -59,8 +54,16 @@ async fn main() -> std::io::Result<()> {
 		.await
 }
 
-
-#[actix_web::get("/")]
+#[get("/")]
 async fn status() -> impl Responder {
 	HttpResponse::Ok().json(json!({ "status": "ok" }))
+}
+
+#[get("")]
+async fn assets(file: web::Path<String>) -> impl Responder {
+	if let Some(file) = WWWROOT.get_file(format!("assets/{}", file.as_str())) {
+		let body = file.contents();
+		return Ok(HttpResponse::Ok().content_type(file_extension_to_mime(file.path().extension().unwrap().to_str().unwrap())).body(body));
+	}
+	Err(ErrorInternalServerError(format!("Failed to find {}", file)))
 }
