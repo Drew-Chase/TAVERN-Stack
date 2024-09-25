@@ -1,7 +1,6 @@
 [package]
 name = "{{project_name}}"
 version = "{{version}}"
-description = "{{description}}"
 edition = "2021"
 build = "src-actix/build.rs"
 
@@ -18,14 +17,8 @@ serde = { version = "1.0.208", features = ["derive"] }
 serde_json = { version = "1.0.125" }
 env_logger = "0.11.5"
 include_dir = "0.7.4"
-walkdir = "2.5.0"
-awc = "3.1.0"
-log = "0.4.22"
-anyhow = "1.0.95"
 
 
 [build-dependencies]
 cargo-watch = "8.5.2"
 include_dir = "0.7.4"
-walkdir = "2.5.0"
-npm_rs = "1.0.0"
