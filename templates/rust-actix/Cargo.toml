@@ -3,10 +3,11 @@ name = "{{project_name}}"
 version = "{{version}}"
 description = "{{description}}"
 edition = "2021"
+build = "src-actix/build.rs"
 
 [[bin]]
 name = "{{project_name}}"
-path = "src-axium/main.rs"
+path = "src-actix/main.rs"
 
 [dependencies]
 actix-web = { version = "4.9.0" }
@@ -16,6 +17,9 @@ futures-util = "0.3.30"
 serde = { version = "1.0.208", features = ["derive"] }
 serde_json = { version = "1.0.125" }
 env_logger = "0.11.5"
+include_dir = "0.7.4"
+
 
 [build-dependencies]
 cargo-watch = "8.5.2"
+include_dir = "0.7.4"
