@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="">
+    <list default="true" id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="Add Node.js Core to IntelliJ and update workspace settings&#10;&#10;Introduced a new jsLibraryMappings.xml to include Node.js Core. Updated workspace.xml to refine project settings, enable PUSH_AUTO_UPDATE, and add new configuration components. Adjusted existing comments and removed obsolete paths.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/components/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/components/Navigation.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/run/media/drewc/Workspaces/JetBrains/PHPStorm/TAVERN-Stack",
+    "last_opened_file_path": "C:/Workspaces/Web/TAVERN-Stack/templates/rust-tauri",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -77,6 +78,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Workspaces\Web\TAVERN-Stack\templates\rust-tauri" />
       <recent name="$PROJECT_DIR$/templates/rust-actix/src-actix" />
     </key>
   </component>
@@ -112,7 +114,31 @@
       <option name="project" value="LOCAL" />
       <updated>1725144878586</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add package.json for Rust Tauri project&#10;&#10;Introduce essential scripts and devDependency to support development, build, and preview commands using Vite and Tauri. This setup also includes the archiver library to handle packaging tasks.">
+      <option name="closed" value="true" />
+      <created>1728418615645</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728418615645</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Remove package-lock.json from rust-actix template&#10;&#10;Deleted the package-lock.json file from the rust-actix template. This change helps prevent issues related to package version locking and ensures dependencies are dynamically resolved.">
+      <option name="closed" value="true" />
+      <created>1728418624626</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728418624626</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add Node.js Core to IntelliJ and update workspace settings&#10;&#10;Introduced a new jsLibraryMappings.xml to include Node.js Core. Updated workspace.xml to refine project settings, enable PUSH_AUTO_UPDATE, and add new configuration components. Adjusted existing comments and removed obsolete paths.">
+      <option name="closed" value="true" />
+      <created>1728418633660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728418633660</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +158,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Refactor IntelliJ configuration files&#10;&#10;Deleted obsolete .idea files and replaced them with new module and workspace settings. Updated vcs.xml configuration to fix Git directory mapping." />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Add package.json for Rust Tauri project&#10;&#10;Introduce essential scripts and devDependency to support development, build, and preview commands using Vite and Tauri. This setup also includes the archiver library to handle packaging tasks." />
+    <MESSAGE value="Remove package-lock.json from rust-actix template&#10;&#10;Deleted the package-lock.json file from the rust-actix template. This change helps prevent issues related to package version locking and ensures dependencies are dynamically resolved." />
+    <MESSAGE value="Add Node.js Core to IntelliJ and update workspace settings&#10;&#10;Introduced a new jsLibraryMappings.xml to include Node.js Core. Updated workspace.xml to refine project settings, enable PUSH_AUTO_UPDATE, and add new configuration components. Adjusted existing comments and removed obsolete paths." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Node.js Core to IntelliJ and update workspace settings&#10;&#10;Introduced a new jsLibraryMappings.xml to include Node.js Core. Updated workspace.xml to refine project settings, enable PUSH_AUTO_UPDATE, and add new configuration components. Adjusted existing comments and removed obsolete paths." />
   </component>
 </project>
