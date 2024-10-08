@@ -1,6 +1,7 @@
 [package]
 name = "{{project_name}}"
 version = "{{version}}"
+description = "{{description}}"
 edition = "2021"
 
 [[bin]]
