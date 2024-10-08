@@ -1,0 +1,11 @@
+{
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"tauri": "tauri"
+	},
+	"{{INSERT}}devDependencies": {
+		"archiver": "^7.0.1"
+	}
+}
