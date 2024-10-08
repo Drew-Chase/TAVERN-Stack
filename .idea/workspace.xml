@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="Refactor IntelliJ configuration files&#10;&#10;Deleted obsolete .idea files and replaced them with new module and workspace settings. Updated vcs.xml configuration to fix Git directory mapping.">
-      <change afterPath="$PROJECT_DIR$/templates/rust-actix/src-actix/build.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_31_2024_6_54_PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rust-actix/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rust-actix/src-actix/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/src-actix/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +20,9 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -52,6 +50,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2lRZGNzWygIJLbdAY05xCUnjBLm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,10 +66,12 @@
     "last_opened_file_path": "/run/media/drewc/Workspaces/JetBrains/PHPStorm/TAVERN-Stack",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
     "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "ts.external.directory.path": "C:\\Workspaces\\Web\\TAVERN-Stack\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -129,6 +132,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Refactor IntelliJ configuration files&#10;&#10;Deleted obsolete .idea files and replaced them with new module and workspace settings. Updated vcs.xml configuration to fix Git directory mapping." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor IntelliJ configuration files&#10;&#10;Deleted obsolete .idea files and replaced them with new module and workspace settings. Updated vcs.xml configuration to fix Git directory mapping." />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
