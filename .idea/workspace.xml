@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="Add Node.js Core to IntelliJ and update workspace settings&#10;&#10;Introduced a new jsLibraryMappings.xml to include Node.js Core. Updated workspace.xml to refine project settings, enable PUSH_AUTO_UPDATE, and add new configuration components. Adjusted existing comments and removed obsolete paths.">
+      <change afterPath="$PROJECT_DIR$/templates/rust-actix/scripts/dev.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/components/Navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/components/Navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/scripts/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/scripts/publish.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/scripts/run.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/src-actix/build.rs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/src-actix/build.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/src-actix/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/src-actix/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +72,7 @@
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "C:/Workspaces/Web/TAVERN-Stack/templates/rust-tauri",
+    "last_opened_file_path": "C:/Workspaces/Web/TAVERN-Stack/templates/rust-actix",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -78,6 +86,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Workspaces\Web\TAVERN-Stack\templates\rust-actix" />
       <recent name="C:\Workspaces\Web\TAVERN-Stack\templates\rust-tauri" />
       <recent name="$PROJECT_DIR$/templates/rust-actix/src-actix" />
     </key>
@@ -105,6 +114,7 @@
       <workItem from="1727308105608" duration="45000" />
       <workItem from="1727308156077" duration="113000" />
       <workItem from="1727308284330" duration="52000" />
+      <workItem from="1728925206534" duration="2772000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor IntelliJ configuration files&#10;&#10;Deleted obsolete .idea files and replaced them with new module and workspace settings. Updated vcs.xml configuration to fix Git directory mapping.">
       <option name="closed" value="true" />
