@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="Remove deprecated main.tsx file&#10;&#10;The main.tsx file has been deleted to clean up outdated code. This file was responsible for rendering the React routing structure and handling API status checks, which have now been refactored or moved to other parts of the project.">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +105,7 @@
       <workItem from="1727308156077" duration="113000" />
       <workItem from="1727308284330" duration="52000" />
       <workItem from="1728925206534" duration="3026000" />
-      <workItem from="1728930442353" duration="473000" />
+      <workItem from="1728930442353" duration="689000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor IntelliJ configuration files&#10;&#10;Deleted obsolete .idea files and replaced them with new module and workspace settings. Updated vcs.xml configuration to fix Git directory mapping.">
       <option name="closed" value="true" />
@@ -229,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728930886946</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Remove deprecated main.tsx file&#10;&#10;Deleted the outdated main.tsx file to clean up legacy code. This file was responsible for React routing and API checks, which have been refactored and moved elsewhere. This ensures a more maintainable and streamlined codebase.">
+      <option name="closed" value="true" />
+      <created>1728930949690</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930949690</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +269,7 @@
     <MESSAGE value="Add main.tsx with routing and theming&#10;&#10;Introduced `main.tsx` to set up routing with `react-router-dom`, including `Home` and `About` pages. Applied theming with `NextUIProvider` and added an API status check using jQuery." />
     <MESSAGE value="Update IntelliJ workspace settings&#10;&#10;Updated the last opened file path and added new recent projects. Enhanced task tracking and included multiple configuration changes to reflect the latest project setup. Improved integration and configuration management for a streamlined development experience." />
     <MESSAGE value="Remove deprecated main.tsx file&#10;&#10;The main.tsx file has been deleted to clean up outdated code. This file was responsible for rendering the React routing structure and handling API status checks, which have now been refactored or moved to other parts of the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove deprecated main.tsx file&#10;&#10;The main.tsx file has been deleted to clean up outdated code. This file was responsible for rendering the React routing structure and handling API status checks, which have now been refactored or moved to other parts of the project." />
+    <MESSAGE value="Remove deprecated main.tsx file&#10;&#10;Deleted the outdated main.tsx file to clean up legacy code. This file was responsible for React routing and API checks, which have been refactored and moved elsewhere. This ensures a more maintainable and streamlined codebase." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove deprecated main.tsx file&#10;&#10;Deleted the outdated main.tsx file to clean up legacy code. This file was responsible for React routing and API checks, which have been refactored and moved elsewhere. This ensures a more maintainable and streamlined codebase." />
   </component>
 </project>
