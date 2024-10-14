@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/rust-actix/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rust-actix/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/package.json" afterDir="false" />
+    <list default="true" id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="Remove deprecated main.tsx file&#10;&#10;The main.tsx file has been deleted to clean up outdated code. This file was responsible for rendering the React routing structure and handling API status checks, which have now been refactored or moved to other parts of the project.">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +107,7 @@
       <workItem from="1727308156077" duration="113000" />
       <workItem from="1727308284330" duration="52000" />
       <workItem from="1728925206534" duration="3026000" />
-      <workItem from="1728930442353" duration="296000" />
+      <workItem from="1728930442353" duration="473000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor IntelliJ configuration files&#10;&#10;Deleted obsolete .idea files and replaced them with new module and workspace settings. Updated vcs.xml configuration to fix Git directory mapping.">
       <option name="closed" value="true" />
@@ -199,7 +197,39 @@
       <option name="project" value="LOCAL" />
       <updated>1728929948079</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update watch-api command in package.json&#10;&#10;Changed the `watch-api` command to use the `target/dev-env` directory instead of `dist`. This ensures the development environment is correctly targeted and monitored.">
+      <option name="closed" value="true" />
+      <created>1728930776519</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930776519</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add main.tsx with routing and theming&#10;&#10;Introduced `main.tsx` to set up routing with `react-router-dom`, including `Home` and `About` pages. Applied theming with `NextUIProvider` and added an API status check using jQuery.">
+      <option name="closed" value="true" />
+      <created>1728930784030</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930784030</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update IntelliJ workspace settings&#10;&#10;Updated the last opened file path and added new recent projects. Enhanced task tracking and included multiple configuration changes to reflect the latest project setup. Improved integration and configuration management for a streamlined development experience.">
+      <option name="closed" value="true" />
+      <created>1728930795718</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930795718</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Remove deprecated main.tsx file&#10;&#10;The main.tsx file has been deleted to clean up outdated code. This file was responsible for rendering the React routing structure and handling API status checks, which have now been refactored or moved to other parts of the project.">
+      <option name="closed" value="true" />
+      <created>1728930886946</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930886946</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +259,10 @@
     <MESSAGE value="Add new dependencies to Cargo.toml&#10;&#10;Added `walkdir`, `awc`, and `log` to runtime dependencies. Also included `walkdir` and `npm_rs` to build dependencies for enhanced functionality. These changes aim to extend the capabilities of the `rust-actix` template." />
     <MESSAGE value="Add proxy setup for Vite dev server and improve logging&#10;&#10;Replaced `println!` with `log::info` for improved logging clarity. Implemented `proxy_to_vite` function for forwarding requests to the Vite development server in development mode and adjusted routing to conditionally handle requests based on the build configuration. Adjusted error handling and streamlined inclusion of the `index.html` file." />
     <MESSAGE value="Refactor build script to use npm_rs and enhance directory setup&#10;&#10;Replaced usage of std::process::Command with npm_rs for cleaner npm script execution. Added logic for creating required directories and monitoring source file changes to trigger rebuilds." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor build script to use npm_rs and enhance directory setup&#10;&#10;Replaced usage of std::process::Command with npm_rs for cleaner npm script execution. Added logic for creating required directories and monitoring source file changes to trigger rebuilds." />
+    <MESSAGE value="Update watch-api command in package.json&#10;&#10;Changed the `watch-api` command to use the `target/dev-env` directory instead of `dist`. This ensures the development environment is correctly targeted and monitored." />
+    <MESSAGE value="Add main.tsx with routing and theming&#10;&#10;Introduced `main.tsx` to set up routing with `react-router-dom`, including `Home` and `About` pages. Applied theming with `NextUIProvider` and added an API status check using jQuery." />
+    <MESSAGE value="Update IntelliJ workspace settings&#10;&#10;Updated the last opened file path and added new recent projects. Enhanced task tracking and included multiple configuration changes to reflect the latest project setup. Improved integration and configuration management for a streamlined development experience." />
+    <MESSAGE value="Remove deprecated main.tsx file&#10;&#10;The main.tsx file has been deleted to clean up outdated code. This file was responsible for rendering the React routing structure and handling API status checks, which have now been refactored or moved to other parts of the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove deprecated main.tsx file&#10;&#10;The main.tsx file has been deleted to clean up outdated code. This file was responsible for rendering the React routing structure and handling API status checks, which have now been refactored or moved to other parts of the project." />
   </component>
 </project>
