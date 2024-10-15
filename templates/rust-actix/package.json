@@ -1,18 +1,9 @@
 {
 	"scripts": {
-		"build api": "cargo build --release",
-		"run api": "cargo run --bin project_name",
-		"dev": "vite",
-		"build frontend": "tsc && vite build",
-		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-		"preview": "vite preview",
-		"build and preview": "npm run build && npm run preview",
-		"publish": "node scripts/publish.js",
-		"run": "node scripts/run.js",
-		"watch api": "cargo watch -x \"run --bin {{project_name}}\" -C dist -N --why -w ../src-actix/",
-		"watch frontend": "vite build --watch"
-	},
-	"{{INSERT}}devDependencies": {
-		"archiver": "^7.0.1"
+		"dev": "node scripts/dev.js",
+		"build-api": "cargo build --release",
+		"run-api": "cargo run --bin {{project_name}}",
+		"build-frontend": "tsc && vite build",
+		"watch-api": "cargo watch -x \"run --bin {{project_name}}\" -C target/dev-env -N --why -w ../../src-actix"
 	}
 }
