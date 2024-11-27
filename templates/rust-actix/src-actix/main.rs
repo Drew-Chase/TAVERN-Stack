@@ -5,22 +5,14 @@ use include_dir::{include_dir, Dir};
 use serde_json::json;
 use log::info;
 
+const DEBUG: bool = cfg!(debug_assertions);
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
 	std::env::set_var("RUST_LOG", "trace");
 	env_logger::init();
 
 	let port = 1420; // Port to listen on
-	let config = if cfg!(debug_assertions) {
-		"development"
-	} else {
-		"production"
-	};
-
-	info!("Starting {} server at http://127.0.0.1:{}", config, port);
-
-
-	HttpServer::new(move || {
+	let server = HttpServer::new(move || {
 		let app = App::new()
 			.wrap(middleware::Logger::default())
 			.app_data(
@@ -37,7 +29,7 @@ async fn main() -> std::io::Result<()> {
 			.service(web::scope("api").service(status));
 
 		// Add conditional routing based on the config
-		if config == "development" {
+		if DEBUG {
 			app.default_service(web::route().to(proxy_to_vite))
 			   .service(
 				   web::resource("/assets/{file:.*}")
@@ -54,9 +46,94 @@ async fn main() -> std::io::Result<()> {
 	})
 		.workers(4)
 		.bind(format!("0.0.0.0:{port}", port = port))?
-		.run()
-		.await
+		.run();
+
+	info!(
+        "Starting {} server at http://127.0.0.1:{}...",
+        if DEBUG { "development" } else { "production" },
+        port
+    );
+
+
+
+	if DEBUG {
+		start_vite_server().expect("Failed to start vite server");
+	}
+
+
+	let stop_result = server.await;
+	debug!("Server stopped");
+
+	stop_result
 }
+
+
+/// Starts the Vite development server.
+///
+/// This function attempts to locate the `vite` executable using the appropriate
+/// system command (`where` on Windows and `which` on other systems). If the `vite`
+/// executable is found, it starts the Vite server in a new process. If the `vite`
+/// executable is not found, it returns an error.
+///
+/// # Returns
+///
+/// Returns a `Result` containing the `Child` process of the started Vite server,
+/// or an error if the executable is not found or the server fails to start.
+///
+/// # Errors
+///
+/// Returns an error if the `vite` executable is not found or if the command fails
+/// to start.
+///
+/// # Example
+///
+/// ```rust
+/// match start_vite_server() {
+///     Ok(child) => println!("Vite server started with PID: {}", child.id()),
+///     Err(e) => eprintln!("Failed to start Vite server: {}", e),
+/// }
+/// ```
+fn start_vite_server() -> Result<Child, Box<dyn std::error::Error>> {
+	#[cfg(target_os = "windows")]
+	let find_cmd = "where";
+	#[cfg(not(target_os = "windows"))]
+	let find_cmd = "which";
+
+	let vite = std::process::Command::new(find_cmd)
+		.arg("vite")
+		.stdout(std::process::Stdio::piped())
+		.output()?
+		.stdout;
+
+	let vite = String::from_utf8(vite);
+	let vite = vite.unwrap();
+	let vite = vite.as_str().trim();
+
+	if vite.is_empty() {
+		error!("vite not found, make sure its installed with npm install -g vite");
+		return Err(std::io::Error::new(
+			std::io::ErrorKind::NotFound,
+			"vite not found",
+		))?;
+	}
+
+	// Get the first occurrence
+	let vite = vite
+		.split("\n")
+		.collect::<Vec<_>>()
+		.last()
+		.expect("Failed to get vite executable")
+		.trim();
+
+	debug!("found vite at: {:?}", vite);
+
+	// Start the vite server
+	Ok(std::process::Command::new(vite)
+		.current_dir(r#"../../"#)
+		.spawn()
+		.expect("Failed to start vite server"))
+}
+
 
 
 /// The maximum payload size allowed for forwarding requests and responses.
