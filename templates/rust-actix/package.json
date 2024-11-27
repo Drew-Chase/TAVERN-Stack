@@ -1,9 +1,8 @@
 {
 	"scripts": {
-		"dev": "node scripts/dev.js",
 		"build-api": "cargo build --release",
 		"run-api": "cargo run --bin {{project_name}}",
 		"build-frontend": "tsc && vite build",
-		"watch-api": "cargo watch -x \"run --bin {{project_name}}\" -C target/dev-env -N --why -w ../../src-actix"
+		"dev": "cargo watch -x \"run --bin {{project_name}}\" -C target/dev-env -N --why -w ../../src-actix"
 	}
 }
