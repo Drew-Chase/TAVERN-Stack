@@ -10,8 +10,6 @@ path = "src-actix/main.rs"
 
 [dependencies]
 actix-web = { version = "4.9.0" }
-actix-ws = "0.3.0"
-actix-files = "0.6.6"
 futures-util = "0.3.30"
 serde = { version = "1.0.208", features = ["derive"] }
 serde_json = { version = "1.0.125" }
@@ -24,7 +22,5 @@ anyhow = "1.0.95"
 
 
 [build-dependencies]
-cargo-watch = "8.5.2"
 include_dir = "0.7.4"
 walkdir = "2.5.0"
-npm_rs = "1.0.0"
