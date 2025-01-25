@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d3984da-a08b-4850-896a-5683450111c9" name="Changes" comment="Add `actix-files` dependency and refactor server logic&#10;&#10;Added `actix-files` to `Cargo.toml` for enhanced file handling. Updated `main.rs` to include `asset_endpoint` imports and corrected improper usage of `server.await` to avoid redundant execution. Cleaned up IntelliJ `.idea` configuration to align with updated project structure." />
+    <list default="true" id="2d3984da-a08b-4850-896a-5683450111c9" name="Changes" comment="Add custom error handling for Actix Web&#10;&#10;Introduce a centralized error type leveraging `thiserror` for custom error handling in the Actix Web template. Updated the `test_endpoint` to use the new error type, ensuring consistency and better readability. Modified `Cargo.toml` to include the `thiserror` dependency.">
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/src-actix/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/src-actix/main.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +63,7 @@
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/run/media/drewc/Workspaces/JetBrains/PHPStorm/TAVERN-Stack",
+    "last_opened_file_path": "F:/JetBrains/PHPStorm/TAVERN-Stack/templates/rust-actix/src-actix",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,6 +78,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\JetBrains\PHPStorm\TAVERN-Stack\templates\rust-actix\src-actix" />
       <recent name="$PROJECT_DIR$/templates/rust-actix/src-actix" />
     </key>
   </component>
@@ -100,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737773921719</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add custom error handling for Actix Web&#10;&#10;Introduce a centralized error type leveraging `thiserror` for custom error handling in the Actix Web template. Updated the `test_endpoint` to use the new error type, ensuring consistency and better readability. Modified `Cargo.toml` to include the `thiserror` dependency.">
+      <option name="closed" value="true" />
+      <created>1737774260400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737774260400</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +123,7 @@
     <MESSAGE value="Add Vite development server support&#10;&#10;Introduce a `start_vite_server` function to conditionally start the Vite server in development mode. Refactor to use a DEBUG constant for clearer code semantics and improve logging messages." />
     <MESSAGE value="Remove dev.js script and update npm dev script&#10;&#10;Deleted the `dev.js` script which was responsible for starting the API and Vite servers. Updated the `dev` npm script to use `cargo watch` directly, simplifying the development process and removing Node.js dependency for script orchestration." />
     <MESSAGE value="Add `actix-files` dependency and refactor server logic&#10;&#10;Added `actix-files` to `Cargo.toml` for enhanced file handling. Updated `main.rs` to include `asset_endpoint` imports and corrected improper usage of `server.await` to avoid redundant execution. Cleaned up IntelliJ `.idea` configuration to align with updated project structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add `actix-files` dependency and refactor server logic&#10;&#10;Added `actix-files` to `Cargo.toml` for enhanced file handling. Updated `main.rs` to include `asset_endpoint` imports and corrected improper usage of `server.await` to avoid redundant execution. Cleaned up IntelliJ `.idea` configuration to align with updated project structure." />
+    <MESSAGE value="Add custom error handling for Actix Web&#10;&#10;Introduce a centralized error type leveraging `thiserror` for custom error handling in the Actix Web template. Updated the `test_endpoint` to use the new error type, ensuring consistency and better readability. Modified `Cargo.toml` to include the `thiserror` dependency." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add custom error handling for Actix Web&#10;&#10;Introduce a centralized error type leveraging `thiserror` for custom error handling in the Actix Web template. Updated the `test_endpoint` to use the new error type, ensuring consistency and better readability. Modified `Cargo.toml` to include the `thiserror` dependency." />
   </component>
 </project>
