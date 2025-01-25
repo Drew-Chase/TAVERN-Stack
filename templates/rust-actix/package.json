@@ -9,7 +9,7 @@
 		"build and preview": "npm run build && npm run preview",
 		"publish": "node scripts/publish.js",
 		"run": "node scripts/run.js",
-		"watch api": "cargo watch -x \"run --bin {{project_name}}\" -C dist -N --why -w ../src-axium/",
+		"watch api": "cargo watch -x \"run --bin {{project_name}}\" -C dist -N --why -w ../src-actix/",
 		"watch frontend": "vite build --watch"
 	},
 	"{{INSERT}}devDependencies": {

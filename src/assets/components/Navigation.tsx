@@ -1,7 +1,6 @@
 import React from "react";
-import {Link, NavbarMenu, NavbarMenuItem, NavbarMenuToggle} from "@nextui-org/react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem} from "@nextui-org/navbar";
-import ThemeSwitcher from "./ThemeSwitcher.tsx";
+import {Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle} from "@heroui/react";
+import {ThemeSwitchComponent} from "../providers/ThemeProvider.tsx";
 
 export default function Navigation()
 {
@@ -30,7 +29,7 @@ export default function Navigation()
             <NavbarContent>
                 <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="sm:hidden"/>
                 <NavbarBrand>
-                    <p className="font-bold text-inherit">Example</p>
+                    <p className="font-bold text-inherit">{{project_name}}</p>
                 </NavbarBrand>
             </NavbarContent>
 
@@ -39,7 +38,7 @@ export default function Navigation()
             </NavbarContent>
             <NavbarContent justify="end">
                 <NavbarItem>
-                    <ThemeSwitcher/>
+                    <ThemeSwitchComponent/>
                 </NavbarItem>
             </NavbarContent>
 

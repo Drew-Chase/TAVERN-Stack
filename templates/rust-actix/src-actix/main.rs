@@ -1,66 +1,79 @@
-use actix_files::Files;
-use actix_files::NamedFile;
-use actix_web::error::ErrorInternalServerError;
-use actix_web::{error, middleware, web, App, HttpResponse, HttpServer, Responder};
+use actix_web::{get, middleware, web, App, Error, HttpRequest, HttpResponse, HttpServer, Responder};
+use awc::Client;
+use futures_util::stream::StreamExt;
+use include_dir::{include_dir, Dir};
 use serde_json::json;
+use log::*;
+use std::process::Child;
+use anyhow::Result;
 
-// Function to serve the index.html file
-async fn index() -> Result<impl Responder, actix_web::Error> {
-	match NamedFile::open_async("wwwroot/index.html").await {
-		Ok(file) => Ok(file),
-		Err(_) => Err(ErrorInternalServerError("Error serving index.html")),
-	}
-}
+mod asset_endpoint;
+mod test_endpoint;
+
+pub static DEBUG: bool = cfg!(debug_assertions);
+const PORT: u16 = 1421;
+
 #[actix_web::main]
-async fn main() -> std::io::Result<()> {
-	std::env::set_var("RUST_LOG", "actix_web=info");
+async fn main() -> Result<()> {
+	std::env::set_var("RUST_LOG", "debug");
 	env_logger::init();
 
-	let port = 1420; // Port to listen on
-
-
-	println!(
-		"Starting server at http://127.0.0.1:{port}",
-		port = port,
-	);
-
-
-	HttpServer::new(move || {
-		App::new()
+	let server = HttpServer::new(move || {
+		let app = App::new()
 			.wrap(middleware::Logger::default())
 			.app_data(
 				web::JsonConfig::default()
 					.limit(4096)
 					.error_handler(|err, _req| {
 						let error = json!({ "error": format!("{}", err) });
-						error::InternalError::from_response(
+						actix_web::error::InternalError::from_response(
 							err,
 							HttpResponse::BadRequest().json(error),
-						)
-							.into()
-					}),
+						).into()
+					})
 			)
-			// Handle API routes here
 			.service(
 				web::scope("api")
-					.service(status),
+					.configure(test_endpoint::configure)
 			)
-			// Serve static files from the wwwroot directory
-			.service(
-				Files::new("/", "wwwroot")
-					.index_file("index.html"),
-			)
-			// Handle all other routes by serving the index.html file
-			.default_service(web::route().to(index))
+
+			.configure_routes();
+
+		// Add conditional routing based on the config
+		if DEBUG {
+			app.default_service(web::route().to(proxy_to_vite))
+			   .service(
+				   web::resource("/assets/{file:.*}")
+					   .route(web::get().to(proxy_to_vite))
+			   )
+			   .service(
+				   web::resource("/node_modules/{file:.*}")
+					   .route(web::get().to(proxy_to_vite))
+			   )
+		} else {
+			app.default_service(web::route().to(index))
+			   .service(web::resource("/assets/{file:.*}").route(web::get().to(index)))
+		}
 	})
 		.workers(4)
-		.bind(format!("0.0.0.0:{port}", port = port))?
-		.run()
-		.await
-}
+		.bind(format!("0.0.0.0:{port}", port = PORT))?
+		.run();
+
+	info!(
+        "Starting {} server at http://127.0.0.1:{}...",
+        if DEBUG { "development" } else { "production" },
+        PORT
+    );
 
 
-#[actix_web::get("/")]
-async fn status() -> impl Responder {
-	HttpResponse::Ok().json(json!({ "status": "ok" }))
+
+	if DEBUG {
+		start_vite_server().expect("Failed to start vite server");
+	}
+
+
+	let stop_result = server.await;
+	debug!("Server stopped");
+
+	Ok(server.await?)
 }

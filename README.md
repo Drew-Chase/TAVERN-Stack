@@ -1,6 +1,6 @@
 # TAVERN-Stack
 
-TAVERN Stack - [Typescript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/) + [React](https://react.dev/) + [NextUI](https://nextui.org/)
+TAVERN Stack - [Typescript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/) + [React](https://react.dev/) + [HeroUI](https://heroui.com/)
 
 ## Getting Started
 
