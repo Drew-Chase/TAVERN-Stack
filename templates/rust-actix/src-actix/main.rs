@@ -1,10 +1,6 @@
-use actix_web::{get, middleware, web, App, Error, HttpRequest, HttpResponse, HttpServer, Responder};
-use awc::Client;
-use futures_util::stream::StreamExt;
-use include_dir::{include_dir, Dir};
+use actix_web::{middleware, web, App, HttpResponse, HttpServer};
 use serde_json::json;
 use log::*;
-use std::process::Child;
 use anyhow::Result;
 use crate::asset_endpoint::{start_vite_server, AppConfig};
 
@@ -21,7 +17,7 @@ async fn main() -> Result<()> {
 	env_logger::init();
 
 	let server = HttpServer::new(move || {
-		 App::new()
+		App::new()
 			.wrap(middleware::Logger::default())
 			.app_data(
 				web::JsonConfig::default()
