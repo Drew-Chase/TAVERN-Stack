@@ -19,7 +19,7 @@ async fn main() -> Result<()> {
 	env_logger::init();
 
 	let server = HttpServer::new(move || {
-		let app = App::new()
+		 App::new()
 			.wrap(middleware::Logger::default())
 			.app_data(
 				web::JsonConfig::default()
@@ -37,23 +37,7 @@ async fn main() -> Result<()> {
 					.configure(test_endpoint::configure)
 			)
 
-			.configure_routes();
-
-		// Add conditional routing based on the config
-		if DEBUG {
-			app.default_service(web::route().to(proxy_to_vite))
-			   .service(
-				   web::resource("/assets/{file:.*}")
-					   .route(web::get().to(proxy_to_vite))
-			   )
-			   .service(
-				   web::resource("/node_modules/{file:.*}")
-					   .route(web::get().to(proxy_to_vite))
-			   )
-		} else {
-			app.default_service(web::route().to(index))
-			   .service(web::resource("/assets/{file:.*}").route(web::get().to(index)))
-		}
+			.configure_routes()
 	})
 		.workers(4)
 		.bind(format!("0.0.0.0:{port}", port = PORT))?
