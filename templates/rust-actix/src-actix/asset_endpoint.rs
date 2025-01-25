@@ -1,12 +1,12 @@
-use std::process::Child;
+use crate::DEBUG;
 use actix_files::file_extension_to_mime;
-use actix_web::{get, web, App, Error, HttpRequest, HttpResponse, Responder};
 use actix_web::error::ErrorInternalServerError;
+use actix_web::{get, web, App, Error, HttpRequest, HttpResponse, Responder};
 use awc::Client;
 use futures_util::StreamExt;
 use include_dir::{include_dir, Dir};
 use log::{debug, error};
-use crate::DEBUG;
+use std::process::Child;
 
 // The maximum payload size allowed for forwarding requests and responses.
 //
@@ -70,7 +70,10 @@ async fn assets(file: web::Path<String>) -> impl Responder {
 //
 // An `HttpResponse` which contains the response from the Vite server,
 // or an error response in case of failure.
-pub async fn proxy_to_vite(req: HttpRequest, mut payload: web::Payload) -> anyhow::Result<HttpResponse, Error> {
+pub async fn proxy_to_vite(
+	req: HttpRequest,
+	mut payload: web::Payload,
+) -> anyhow::Result<HttpResponse, Error> {
 	let client = Client::new();
 	let forward_url = format!("http://localhost:3000{}", req.uri());
 
@@ -131,7 +134,7 @@ pub fn start_vite_server() -> anyhow::Result<Child> {
 
 	if vite.is_empty() {
 		error!("vite not found, make sure its installed with npm install -g vite");
-		return Err(std::io::Error::new(
+		Err(std::io::Error::new(
 			std::io::ErrorKind::NotFound,
 			"vite not found",
 		))?;
@@ -147,11 +150,26 @@ pub fn start_vite_server() -> anyhow::Result<Child> {
 
 	debug!("found vite at: {:?}", vite);
 
-	// Start the vite server
-	Ok(std::process::Command::new(vite)
-		.current_dir(r#"../../"#)
-		.spawn()
-		.expect("Failed to start vite server"))
+	if let Some(project_root) = try_find_vite_project_root() {
+		// Start the vite server
+		Ok(std::process::Command::new(vite)
+			.current_dir(project_root)
+			.spawn()
+			.expect("Failed to start vite server"))
+	} else {
+		panic!("Failed to find vite project root");
+	}
+}
+
+fn try_find_vite_project_root() -> Option<String> {
+	let mut current_dir = std::env::current_dir().ok()?;
+	while current_dir != std::path::Path::new("/") {
+		if current_dir.join("vite.config.ts").exists() {
+			return Some(current_dir.to_str()?.to_string());
+		}
+		current_dir = current_dir.parent().unwrap().to_path_buf();
+	}
+	None
 }
 
 pub trait AppConfig {
@@ -163,7 +181,7 @@ where
 	T: actix_web::dev::ServiceFactory<
 		actix_web::dev::ServiceRequest,
 		Config = (),
-		Error = actix_web::Error,
+		Error = Error,
 		InitError = (),
 	>,
 {
@@ -171,7 +189,9 @@ where
 		if DEBUG {
 			self.default_service(web::route().to(proxy_to_vite))
 			    .service(web::resource("/assets/{file:.*}").route(web::get().to(proxy_to_vite)))
-			    .service(web::resource("/node_modules/{file:.*}").route(web::get().to(proxy_to_vite)))
+			    .service(
+				    web::resource("/node_modules/{file:.*}").route(web::get().to(proxy_to_vite)),
+			    )
 		} else {
 			self.default_service(web::route().to(index))
 			    .service(web::scope("/assets/{file:.*}").service(assets))
