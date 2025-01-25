@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Routes, useNavigate} from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import $ from "jquery";
 
-import "./assets/scss/index.scss";
+import "./assets/css/index.css";
 import Home from "./assets/pages/Home.tsx";
 import About from "./assets/pages/About.tsx";
 import Navigation from "./assets/components/Navigation.tsx";
