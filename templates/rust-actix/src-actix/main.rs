@@ -6,6 +6,7 @@ use serde_json::json;
 use log::*;
 use std::process::Child;
 use anyhow::Result;
+use crate::asset_endpoint::{start_vite_server, AppConfig};
 
 mod asset_endpoint;
 mod test_endpoint;
@@ -59,5 +60,5 @@ async fn main() -> Result<()> {
 	let stop_result = server.await;
 	debug!("Server stopped");
 
-	Ok(server.await?)
+	Ok(stop_result?)
 }

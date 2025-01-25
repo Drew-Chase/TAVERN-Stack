@@ -10,6 +10,7 @@ path = "src-actix/main.rs"
 
 [dependencies]
 actix-web = { version = "4.9.0" }
+actix-files = {version = "0.6.6"}
 futures-util = "0.3.30"
 serde = { version = "1.0.208", features = ["derive"] }
 serde_json = { version = "1.0.125" }

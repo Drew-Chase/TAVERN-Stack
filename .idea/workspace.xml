@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2d3984da-a08b-4850-896a-5683450111c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/src-actix/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/src-actix/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-    </option>
   </component>
   <component name="ComposerSettings">
     <execution />
@@ -34,33 +29,32 @@
     &quot;assignee&quot;: &quot;Drew-Chase&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Drew-Chase/TAVERN-Stack.git",
-    "accountId": "767b17f2-61cc-49f9-9314-dd4fa13fb83e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Drew-Chase/TAVERN-Stack.git&quot;,
+    &quot;accountId&quot;: &quot;767b17f2-61cc-49f9-9314-dd4fa13fb83e&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "Drew-Chase",
-    "repository": "TAVERN-Stack"
+    &quot;owner&quot;: &quot;Drew-Chase&quot;,
+    &quot;repository&quot;: &quot;TAVERN-Stack&quot;
   }
-}]]></component>
+}</component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="1qjff83b" />
+    <option name="directoryName" value="A72LdLEm" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2lRZGNzWygIJLbdAY05xCUnjBLm" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -68,7 +62,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/run/media/drewc/Workspaces/JetBrains/PHPStorm/TAVERN-Stack",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -100,58 +94,10 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="" />
-      <created>1725144753760</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1725144753760</updated>
-      <workItem from="1725144756157" duration="170000" />
-      <workItem from="1727308105608" duration="45000" />
-      <workItem from="1727308156077" duration="113000" />
-      <workItem from="1727308284330" duration="52000" />
-      <workItem from="1732667474146" duration="2357000" />
-    </task>
-    <task id="LOCAL-00001" summary="Refactor IntelliJ configuration files&#10;&#10;Deleted obsolete .idea files and replaced them with new module and workspace settings. Updated vcs.xml configuration to fix Git directory mapping.">
-      <option name="closed" value="true" />
-      <created>1725144878586</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1725144878586</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add Vite development server support&#10;&#10;Introduce a `start_vite_server` function to conditionally start the Vite server in development mode. Refactor to use a DEBUG constant for clearer code semantics and improve logging messages.">
-      <option name="closed" value="true" />
-      <created>1732670073688</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1732670073688</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Remove dev.js script and update npm dev script&#10;&#10;Deleted the `dev.js` script which was responsible for starting the API and Vite servers. Updated the `dev` npm script to use `cargo watch` directly, simplifying the development process and removing Node.js dependency for script orchestration.">
-      <option name="closed" value="true" />
-      <created>1732670212663</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1732670212663</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
