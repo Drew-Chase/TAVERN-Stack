@@ -1,6 +1,5 @@
 import React from "react";
-import {Link, NavbarMenu, NavbarMenuItem, NavbarMenuToggle} from "@nextui-org/react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem} from "@nextui-org/navbar";
+import {Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle} from "@nextui-org/react";
 import ThemeSwitcher from "./ThemeSwitcher.tsx";
 
 export default function Navigation()

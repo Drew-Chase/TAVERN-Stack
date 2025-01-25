@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Drew-Chase&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Drew-Chase/TAVERN-Stack.git&quot;,
+    &quot;accountId&quot;: &quot;767b17f2-61cc-49f9-9314-dd4fa13fb83e&quot;
+  }
+}</component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="1qjff83b" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2lRZGNzWygIJLbdAY05xCUnjBLm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "C:/Workspaces/Web/TAVERN-Stack/templates/rust-actix/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "ts.external.directory.path": "C:\\Workspaces\\Web\\TAVERN-Stack\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Workspaces\Web\TAVERN-Stack\templates\rust-actix\src" />
+      <recent name="C:\Workspaces\Web\TAVERN-Stack\templates\rust-actix" />
+      <recent name="C:\Workspaces\Web\TAVERN-Stack\templates\rust-tauri" />
+      <recent name="$PROJECT_DIR$/templates/rust-actix/src-actix" />
+    </key>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.22855.113" />
+        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.22855.113" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6e46ad2-81cc-45b0-bc08-2203b648b557" name="Changes" comment="" />
+      <created>1725144753760</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725144753760</updated>
+      <workItem from="1725144756157" duration="170000" />
+      <workItem from="1727308105608" duration="45000" />
+      <workItem from="1727308156077" duration="113000" />
+      <workItem from="1727308284330" duration="52000" />
+      <workItem from="1728925206534" duration="3026000" />
+      <workItem from="1728930442353" duration="689000" />
+    </task>
+    <task id="LOCAL-00001" summary="Refactor IntelliJ configuration files&#10;&#10;Deleted obsolete .idea files and replaced them with new module and workspace settings. Updated vcs.xml configuration to fix Git directory mapping.">
+      <option name="closed" value="true" />
+      <created>1725144878586</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725144878586</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add package.json for Rust Tauri project&#10;&#10;Introduce essential scripts and devDependency to support development, build, and preview commands using Vite and Tauri. This setup also includes the archiver library to handle packaging tasks.">
+      <option name="closed" value="true" />
+      <created>1728418615645</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728418615645</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Remove package-lock.json from rust-actix template&#10;&#10;Deleted the package-lock.json file from the rust-actix template. This change helps prevent issues related to package version locking and ensures dependencies are dynamically resolved.">
+      <option name="closed" value="true" />
+      <created>1728418624626</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728418624626</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add Node.js Core to IntelliJ and update workspace settings&#10;&#10;Introduced a new jsLibraryMappings.xml to include Node.js Core. Updated workspace.xml to refine project settings, enable PUSH_AUTO_UPDATE, and add new configuration components. Adjusted existing comments and removed obsolete paths.">
+      <option name="closed" value="true" />
+      <created>1728418633660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728418633660</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update IntelliJ workspace settings&#10;&#10;Added multiple new project configuration paths and updated the last opened file path to reflect the current project structure. Enhanced task tracking by including recent updates and changes in the workspace. These modifications ensure better integration and configuration management for the project's IntelliJ setup.">
+      <option name="closed" value="true" />
+      <created>1728929891648</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728929891648</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Remove obsolete script files and add `dev.js`.&#10;&#10;Deleted `app.js`, `publish.js`, and `run.js` as they are no longer needed. Introduced `dev.js` to handle the process management for the new development workflow.">
+      <option name="closed" value="true" />
+      <created>1728929902914</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728929902914</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update Vite server config and build output directory&#10;&#10;Changed the server configuration to use host mode and set the port to 3000. Added HMR settings to improve development experience. Updated the build output directory to &quot;target/wwwroot&quot;.">
+      <option name="closed" value="true" />
+      <created>1728929914405</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728929914405</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Refactor npm scripts structure&#10;&#10;Reorganized npm scripts for better readability and consistency. Replaced some hyphenated script names, removed unused scripts, and streamlined the development process by consolidating duplicate functionalities. This makes maintenance easier and aligns with project naming conventions.">
+      <option name="closed" value="true" />
+      <created>1728929922593</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728929922593</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add new dependencies to Cargo.toml&#10;&#10;Added `walkdir`, `awc`, and `log` to runtime dependencies. Also included `walkdir` and `npm_rs` to build dependencies for enhanced functionality. These changes aim to extend the capabilities of the `rust-actix` template.">
+      <option name="closed" value="true" />
+      <created>1728929931276</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728929931276</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add proxy setup for Vite dev server and improve logging&#10;&#10;Replaced `println!` with `log::info` for improved logging clarity. Implemented `proxy_to_vite` function for forwarding requests to the Vite development server in development mode and adjusted routing to conditionally handle requests based on the build configuration. Adjusted error handling and streamlined inclusion of the `index.html` file.">
+      <option name="closed" value="true" />
+      <created>1728929940305</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728929940305</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Refactor build script to use npm_rs and enhance directory setup&#10;&#10;Replaced usage of std::process::Command with npm_rs for cleaner npm script execution. Added logic for creating required directories and monitoring source file changes to trigger rebuilds.">
+      <option name="closed" value="true" />
+      <created>1728929948079</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728929948079</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update watch-api command in package.json&#10;&#10;Changed the `watch-api` command to use the `target/dev-env` directory instead of `dist`. This ensures the development environment is correctly targeted and monitored.">
+      <option name="closed" value="true" />
+      <created>1728930776519</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930776519</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add main.tsx with routing and theming&#10;&#10;Introduced `main.tsx` to set up routing with `react-router-dom`, including `Home` and `About` pages. Applied theming with `NextUIProvider` and added an API status check using jQuery.">
+      <option name="closed" value="true" />
+      <created>1728930784030</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930784030</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update IntelliJ workspace settings&#10;&#10;Updated the last opened file path and added new recent projects. Enhanced task tracking and included multiple configuration changes to reflect the latest project setup. Improved integration and configuration management for a streamlined development experience.">
+      <option name="closed" value="true" />
+      <created>1728930795718</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930795718</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Remove deprecated main.tsx file&#10;&#10;The main.tsx file has been deleted to clean up outdated code. This file was responsible for rendering the React routing structure and handling API status checks, which have now been refactored or moved to other parts of the project.">
+      <option name="closed" value="true" />
+      <created>1728930886946</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930886946</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Remove deprecated main.tsx file&#10;&#10;Deleted the outdated main.tsx file to clean up legacy code. This file was responsible for React routing and API checks, which have been refactored and moved elsewhere. This ensures a more maintainable and streamlined codebase.">
+      <option name="closed" value="true" />
+      <created>1728930949690</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728930949690</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Refactor IntelliJ configuration files&#10;&#10;Deleted obsolete .idea files and replaced them with new module and workspace settings. Updated vcs.xml configuration to fix Git directory mapping." />
+    <MESSAGE value="Add package.json for Rust Tauri project&#10;&#10;Introduce essential scripts and devDependency to support development, build, and preview commands using Vite and Tauri. This setup also includes the archiver library to handle packaging tasks." />
+    <MESSAGE value="Remove package-lock.json from rust-actix template&#10;&#10;Deleted the package-lock.json file from the rust-actix template. This change helps prevent issues related to package version locking and ensures dependencies are dynamically resolved." />
+    <MESSAGE value="Add Node.js Core to IntelliJ and update workspace settings&#10;&#10;Introduced a new jsLibraryMappings.xml to include Node.js Core. Updated workspace.xml to refine project settings, enable PUSH_AUTO_UPDATE, and add new configuration components. Adjusted existing comments and removed obsolete paths." />
+    <MESSAGE value="Update IntelliJ workspace settings&#10;&#10;Added multiple new project configuration paths and updated the last opened file path to reflect the current project structure. Enhanced task tracking by including recent updates and changes in the workspace. These modifications ensure better integration and configuration management for the project's IntelliJ setup." />
+    <MESSAGE value="Remove obsolete script files and add `dev.js`.&#10;&#10;Deleted `app.js`, `publish.js`, and `run.js` as they are no longer needed. Introduced `dev.js` to handle the process management for the new development workflow." />
+    <MESSAGE value="Update Vite server config and build output directory&#10;&#10;Changed the server configuration to use host mode and set the port to 3000. Added HMR settings to improve development experience. Updated the build output directory to &quot;target/wwwroot&quot;." />
+    <MESSAGE value="Refactor npm scripts structure&#10;&#10;Reorganized npm scripts for better readability and consistency. Replaced some hyphenated script names, removed unused scripts, and streamlined the development process by consolidating duplicate functionalities. This makes maintenance easier and aligns with project naming conventions." />
+    <MESSAGE value="Add new dependencies to Cargo.toml&#10;&#10;Added `walkdir`, `awc`, and `log` to runtime dependencies. Also included `walkdir` and `npm_rs` to build dependencies for enhanced functionality. These changes aim to extend the capabilities of the `rust-actix` template." />
+    <MESSAGE value="Add proxy setup for Vite dev server and improve logging&#10;&#10;Replaced `println!` with `log::info` for improved logging clarity. Implemented `proxy_to_vite` function for forwarding requests to the Vite development server in development mode and adjusted routing to conditionally handle requests based on the build configuration. Adjusted error handling and streamlined inclusion of the `index.html` file." />
+    <MESSAGE value="Refactor build script to use npm_rs and enhance directory setup&#10;&#10;Replaced usage of std::process::Command with npm_rs for cleaner npm script execution. Added logic for creating required directories and monitoring source file changes to trigger rebuilds." />
+    <MESSAGE value="Update watch-api command in package.json&#10;&#10;Changed the `watch-api` command to use the `target/dev-env` directory instead of `dist`. This ensures the development environment is correctly targeted and monitored." />
+    <MESSAGE value="Add main.tsx with routing and theming&#10;&#10;Introduced `main.tsx` to set up routing with `react-router-dom`, including `Home` and `About` pages. Applied theming with `NextUIProvider` and added an API status check using jQuery." />
+    <MESSAGE value="Update IntelliJ workspace settings&#10;&#10;Updated the last opened file path and added new recent projects. Enhanced task tracking and included multiple configuration changes to reflect the latest project setup. Improved integration and configuration management for a streamlined development experience." />
+    <MESSAGE value="Remove deprecated main.tsx file&#10;&#10;The main.tsx file has been deleted to clean up outdated code. This file was responsible for rendering the React routing structure and handling API status checks, which have now been refactored or moved to other parts of the project." />
+    <MESSAGE value="Remove deprecated main.tsx file&#10;&#10;Deleted the outdated main.tsx file to clean up legacy code. This file was responsible for React routing and API checks, which have been refactored and moved elsewhere. This ensures a more maintainable and streamlined codebase." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove deprecated main.tsx file&#10;&#10;Deleted the outdated main.tsx file to clean up legacy code. This file was responsible for React routing and API checks, which have been refactored and moved elsewhere. This ensures a more maintainable and streamlined codebase." />
+  </component>
+</project>
