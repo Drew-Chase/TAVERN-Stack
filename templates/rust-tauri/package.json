@@ -1,0 +1,12 @@
+{
+  "{{INSERT}}scripts": {
+    "tauri": "tauri"
+  },
+  "{{INSERT}}dependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-shell": "^2"
+  },
+  "{{INSERT}}devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}
