@@ -8,6 +8,11 @@ build = "src-actix/build.rs"
 name = "{{project_name}}"
 path = "src-actix/main.rs"
 
+[[lib]]
+name = "{{project_name}}_lib"
+path = "src-actix/lib.rs"
+crate-type = ["lib"]
+
 [dependencies]
 actix-web = { version = "4.9.0" }
 actix-files = {version = "0.6.6"}
@@ -21,6 +26,7 @@ awc = "3.1.0"
 log = "0.4.22"
 anyhow = "1.0.95"
 thiserror = "2.0.11"
+vite-actix = { git = "https://github.com/Drew-Chase/vite-actix.git" }
 
 
 [build-dependencies]
