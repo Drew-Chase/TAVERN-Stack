@@ -5,17 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3984da-a08b-4850-896a-5683450111c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/src-actix/asset_endpoint.rs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/src-actix/asset_endpoint.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rust-actix/src-actix/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rust-actix/src-actix/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -57,26 +65,30 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "F:/JetBrains/PHPStorm/TAVERN-Stack/templates/rust-actix/src-actix",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
-    "ts.external.directory.path": "F:\\JetBrains\\PHPStorm\\TAVERN-Stack\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/JetBrains/PHPStorm/TAVERN-Stack/templates/rust-actix/src-actix&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Workspaces\\Web\\TAVERN-Stack\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\JetBrains\PHPStorm\TAVERN-Stack\templates\rust-actix\src-actix" />
@@ -112,19 +124,65 @@
       <option name="project" value="LOCAL" />
       <updated>1737774260400</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update project name placeholder in package.json&#10;&#10;Replaced the static project name with a dynamic placeholder '{{project_name}}'. This allows for greater flexibility when reusing or templating the repository.">
+      <option name="closed" value="true" />
+      <created>1738007801726</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738007801726</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add Tauri project template with Vite and Rust integration&#10;&#10;Introduce a new Tauri template configured for Vite and React, with Rust-based backend handling and capability management. Includes sample configuration files, build scripts, and default icons to streamline the development of desktop applications.">
+      <option name="closed" value="true" />
+      <created>1738007885790</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738007885790</updated>
+    </task>
+    <task id="LOCAL-00005" summary="    Fix placeholder in Rust main file template&#10;    &#10;    Replaced hardcoded `project_name` with a template placeholder `{{project_name}}`. Ensures proper substitution during project generation.">
+      <option name="closed" value="true" />
+      <created>1738008244609</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738008244609</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update Cargo.toml to use a placeholder for author field&#10;&#10;Replaced the hardcoded &quot;you&quot; with a &quot;{{author}}&quot; placeholder in the authors field. This ensures consistent templating and better customization for project initialization.">
+      <option name="closed" value="true" />
+      <created>1738008319011</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738008319011</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d3984da-a08b-4850-896a-5683450111c9" name="Changes" comment="" />
+      <created>1738071771251</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738071771251</updated>
+      <workItem from="1738071772435" duration="458000" />
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Refactor IntelliJ configuration files&#10;&#10;Deleted obsolete .idea files and replaced them with new module and workspace settings. Updated vcs.xml configuration to fix Git directory mapping." />
     <MESSAGE value="Add Vite development server support&#10;&#10;Introduce a `start_vite_server` function to conditionally start the Vite server in development mode. Refactor to use a DEBUG constant for clearer code semantics and improve logging messages." />
     <MESSAGE value="Remove dev.js script and update npm dev script&#10;&#10;Deleted the `dev.js` script which was responsible for starting the API and Vite servers. Updated the `dev` npm script to use `cargo watch` directly, simplifying the development process and removing Node.js dependency for script orchestration." />
     <MESSAGE value="Add `actix-files` dependency and refactor server logic&#10;&#10;Added `actix-files` to `Cargo.toml` for enhanced file handling. Updated `main.rs` to include `asset_endpoint` imports and corrected improper usage of `server.await` to avoid redundant execution. Cleaned up IntelliJ `.idea` configuration to align with updated project structure." />
     <MESSAGE value="Add custom error handling for Actix Web&#10;&#10;Introduce a centralized error type leveraging `thiserror` for custom error handling in the Actix Web template. Updated the `test_endpoint` to use the new error type, ensuring consistency and better readability. Modified `Cargo.toml` to include the `thiserror` dependency." />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Update project name placeholder in package.json&#10;&#10;Replaced the static project name with a dynamic placeholder '{{project_name}}'. This allows for greater flexibility when reusing or templating the repository." />
+    <MESSAGE value="Add Tauri project template with Vite and Rust integration&#10;&#10;Introduce a new Tauri template configured for Vite and React, with Rust-based backend handling and capability management. Includes sample configuration files, build scripts, and default icons to streamline the development of desktop applications." />
+    <MESSAGE value="    Fix placeholder in Rust main file template&#10;    &#10;    Replaced hardcoded `project_name` with a template placeholder `{{project_name}}`. Ensures proper substitution during project generation." />
+    <MESSAGE value="Update Cargo.toml to use a placeholder for author field&#10;&#10;Replaced the hardcoded &quot;you&quot; with a &quot;{{author}}&quot; placeholder in the authors field. This ensures consistent templating and better customization for project initialization." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Cargo.toml to use a placeholder for author field&#10;&#10;Replaced the hardcoded &quot;you&quot; with a &quot;{{author}}&quot; placeholder in the authors field. This ensures consistent templating and better customization for project initialization." />
   </component>
 </project>
