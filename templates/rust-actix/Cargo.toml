@@ -8,7 +8,7 @@ build = "src-actix/build.rs"
 name = "{{project_name}}"
 path = "src-actix/main.rs"
 
-[[lib]]
+[lib]
 name = "{{project_name}}_lib"
 path = "src-actix/lib.rs"
 crate-type = ["lib"]
