@@ -1,6 +1,7 @@
 {
   "{{INSERT}}scripts": {
-    "tauri": "tauri"
+    "tauri-dev": "tauri dev",
+    "tauri-build": "tauri build"
   },
   "{{INSERT}}dependencies": {
     "@tauri-apps/api": "^2",
